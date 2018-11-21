@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Facebook Test
+    script(src='/js/moment.min.js')
+    script(src='/js/fb.js')
+  body
+    div(id='fb-div' class="fb-messenger-checkbox"  origin=origin page_id="637828299945812" messenger_app_id='1948118188815962' user_ref=id prechecked="false" allow_login="true" size="large" skin="light" center_align="true")
+    input(type="button" onclick="confirmOptIn()" value="Confirm Opt-in")
+    div
+      label(for="person") Your name
+        input(type="text" id='person' name="person")
+    div
+      label(for="departure") Departure
+        input(type="datetime-local" id='departure' name="departure")
+    div
+      label(for="arrival") Arrival
+        input(type="datetime-local" id='arrival' name="arrival")
+    div
+      label(for="from") From:
+        input(type="text" id='from' name="from")
+    div
+      label(for="to") To:
+        input(type="text" id='to' name="to")
+    div
+      label(for="quantity") Quantity
+        input(type="number" id='quantity ' name="quantity")
+    div
+      input(type="button" onclick="confirmOptInReminder()" value="Send Quick Reminder - First reminder")
+      input(type="button" onclick="confirmOptInOnboard()" value="Send Quick Reminder - Onboard reminder")
